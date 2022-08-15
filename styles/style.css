@@ -4,8 +4,12 @@
   box-sizing: border-box;
 }
 
+body {
+  background: moccasin;
+}
+
 header {
-  height: 20vh;
+  height: 15vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,6 +17,12 @@ header {
 
 header h1 {
   font-size: 3rem;
+}
+
+div.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 form {
@@ -31,4 +41,56 @@ form button {
 form input[type="number"] {
   width: 75px;
   text-align: center;
+}
+
+div.form-container p.warning {
+  font-size: 1.75rem;
+  color: red;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section div.todo {
+  display: flex;
+  align-items: center;
+  width: 30vw;
+  margin: 0.2rem 0rem;
+}
+
+section div.todo p {
+  padding: 0.25rem 0.5rem;
+  font-size: 1.75rem;
+}
+
+section div.todo p.todo-text {
+  width: 50%;
+}
+
+section div.todo p.todo-time {
+  width: 25%;
+  text-align: center;
+}
+
+section div.todo button {
+  padding: 0.25rem 0.5rem;
+  font-size: 1rem;
+  margin: 0.2rem;
+}
+
+input[type="checkbox"] {
+  width: 30px;
+  height: 30px;
+  margin: 0.2rem;
+  user-select: none;
+  accent-color: aquamarine;
+}
+
+.done p {
+  opacity: 0.5;
+  text-decoration: line-through;
+  text-decoration-thickness: 0.2rem;
 }
